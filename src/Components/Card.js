@@ -13,15 +13,6 @@ export default class Card extends Component {
             isFlipped: !this.state.isFlipped
         })
     }
-    componentDidMount = () => {
-       if (this.props.dealerCards[0]=== this.props.card){
-           this.setState({
-               cardFace: true
-           })
-       }
-
-        
-    }
 
     render() {
         return (
