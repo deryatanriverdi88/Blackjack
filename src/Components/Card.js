@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import CardFront from './CardFront.js'
 import CardBack from './CardBack.js'
+import ReactCardFlip from 'react-card-flip'
 
 export default class Card extends Component {
 
     state ={
-        cardFace: false
+        isFlipped: false
     }
     handleOnClick = () => {
         this.setState({
-            cardFace: !this.state.cardFace
+            isFlipped: !this.state.isFlipped
         })
     }
     componentDidMount = () => {
