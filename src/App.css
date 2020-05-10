@@ -59,7 +59,7 @@
 }
 
 .card-back:before{
-  border: 3px solid black;
+  border: 1px solid black;
   display: inline-block;
   content: "";
   width:224px;
