@@ -54,7 +54,18 @@
     -webkit-transform: translateZ(0) rotateY(0);
             transform: translateZ(0) rotateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    -webkit-transform: translateZ(-260px) rotateY(-180deg);
+            transform: translateZ(-260px) rotateY(-180deg);
+  }
+}
+@keyframes flip-vertical-bck {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(-260px) rotateY(-180deg);
+            transform: translateZ(-260px) rotateY(-180deg);
   }
 }
