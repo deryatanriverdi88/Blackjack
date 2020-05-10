@@ -41,14 +41,21 @@
 .card:nth-child(1){
   /* transform: rotate(-30deg); */
   left: 100px;
-  z-index: 1;
+  z-index: -1;
+}
+
+.card-back:nth-child(2){
+  left: 190px;
+  /* transition: transform 1s; */
+  transform: rotateY( 180deg );
+  /* transform: rotateY(-180); */
 }
 
 .card-back{
   position: absolute;
-  left: 250px;
-  top: 30px;
-  transform: rotate(30deg);
+  /* left: 190px; */
+  transform: rotateY( 180deg );
+  /* transform: rotate(30deg); */
 }
 
 .card-back:before{
