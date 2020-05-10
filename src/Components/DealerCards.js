@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CardFront from './CardFront.js'
 import CardBack from './CardBack.js'
+import Card from './Card.js'
 
 export default class DealerCards extends Component {
     
@@ -8,11 +9,7 @@ export default class DealerCards extends Component {
         return (
             <div>
                    { this.props.dealerCards.map(card => {
-                       if(card !== this.props.dealerCards[1]){
-                        return <CardFront card={card} />
-                       } else {
-                        return  <CardBack card={card} />
-                       }
+                    return <Card className={card.code} card={card} dealerCards={this.props.dealerCards}/>
                    })}
             </div>
         )
