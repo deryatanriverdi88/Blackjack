@@ -65,9 +65,9 @@
   width:224px;
   height: 314px;
   background: #f9838d;
-  position: absolute;
-  top: 0px;
-  left: 1px;
+  /* position: absolute; */
+  /* top: 0px;
+  left: 1px; */
   border-radius: 11px;
 }
 
