@@ -44,8 +44,9 @@
   border-radius: 11px;
 }
 
-.App-link {
-  color: #61dafb;
+.flip{
+	-webkit-animation: flip-vertical-bck 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-vertical-bck 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 @keyframes App-logo-spin {
