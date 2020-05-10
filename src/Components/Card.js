@@ -26,12 +26,14 @@ export default class Card extends Component {
     render() {
         return (
             <div className='card'>
-                {this.state.cardFace ? 
-                   <CardFront card={this.props.card} card={this.props.card} dealerCards={this.props.dealerCards}/>
+                {this.props.dealerCards[0]=== this.props.card ?
+                    <CardFront card={this.props.card} card={this.props.card} dealerCards={this.props.dealerCards}/>
                    :
+                   <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
                    <CardBack card={this.props.card} handleOnClick={this.handleOnClick} dealerCards={this.props.dealerCards}/>
+                   <CardFront card={this.props.card} card={this.props.card} dealerCards={this.props.dealerCards}/>
+                </ReactCardFlip>
                 }
-
             </div>
 
         )
