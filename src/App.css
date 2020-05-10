@@ -24,10 +24,11 @@
   z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-back{
+  position: absolute;
+  left: 250px;
+  top: 30px;
+  transform: rotate(30deg);
 }
 
 .App-header {
