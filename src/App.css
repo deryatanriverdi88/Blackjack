@@ -17,9 +17,11 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dealer-first-card{
+  transform: rotate(-30deg);
+  position: absolute;
+  left: 100px;
+  z-index: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
