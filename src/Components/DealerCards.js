@@ -7,7 +7,7 @@ export default class DealerCards extends Component {
     
     render() {
         return (
-            <div>
+            <div className='dealer-cards'>
                    { this.props.dealerCards.map(card => {
                     return <Card className={card.code} card={card} dealerCards={this.props.dealerCards}/>
                    })}
