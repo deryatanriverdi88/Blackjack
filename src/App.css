@@ -24,21 +24,15 @@
 
 .card-back{
   position: absolute;
-  /* left: 190px; */
-  transform: rotateY( 180deg );
-  /* transform: rotate(30deg); */
-}
-
-.card-back:before{
-  border: 1px solid black;
+  border: 5px solid black;
   display: inline-block;
   content: "";
   width:224px;
   height: 314px;
   background: #f9838d;
   /* position: absolute; */
-  /* top: 0px;
-  left: 1px; */
+  top: 0px;
+  left: 1px;
   border-radius: 11px;
 }
 
