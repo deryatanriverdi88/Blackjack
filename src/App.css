@@ -31,15 +31,17 @@
   transform: rotate(30deg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-back:before{
+  border: 3px solid black;
+  display: inline-block;
+  content: "";
+  width:224px;
+  height: 314px;
+  background: #f9838d;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  border-radius: 11px;
 }
 
 .App-link {
